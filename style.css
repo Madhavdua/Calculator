@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background-image: url(./calci1.jpg);
+    height: 93vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.heading{
+    text-align: center;
+    margin-top: 2%;
+}
+.calculator{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.calculator > .row{
+    display: flex; 
+    /* flex-direction: column; */
+}
+.calculator> .top> input{
+    width: 370px;
+    margin: 10px;
+    padding: 10px 5px;
+    border: 2px solid black;
+}
+.calculator > .row> .items > button{
+    margin: 3px;
+    width: 90px;
+    height: 40px;
+    color: white;
+    background-color: black;
+
+}
+@media screen and (max-width:370px) {
+    .calculator > .row> .items > button{
+        margin: 3px;
+        width: 50px;
+        height: 40px;
+        color: white;
+    background-color: black;
+    }
+    .calculator> .top> input{
+    width: 215px;
+    margin: 10px;
+    border: 2px solid black;
+    padding: 10px 5px;
+}
+}
+@media screen and (max-width:470px) and (min-width:370px){
+    .calculator > .row> .items > button{
+        margin: 3px;
+        width: 70px;
+        height: 40px;
+        color: white;
+    background-color: black;
+    }
+    .calculator> .top> input{
+    width: 290px;
+    margin: 10px;
+    border: 2px solid black;
+    padding: 10px 5px;
+    }
+}
