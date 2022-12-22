@@ -6,85 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./MDLogo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme.css">
     <title>Calculator By Me</title>
 </head>
 <body>
-    <div class="heading"><h1>Let's Calculate !</h1></div>
-    <div class="calculator">
+    <div class="heading" id="heading">
+        <h1>Let's Calculate !</h1>
+
+        <button id="light" class="theme " onclick="change()"><img src="./light theme.png" alt="" width="37px"></button>
+        <button id="dark" class="theme hide" onclick="change()"><img src="./dark theme.png" alt="" width="37px"></button>
+    </div>
+    <div class="calculator" id="calculator">
         <div class="top">
             <input type="text">
         </div>
         <div class="row">
             <div class="items">
-                <button type="button">%</button>
+                <button class="operations operations-light" type="button">%</button>
             </div>
             <div class="items">
-                <button type="button">CE</button>
+                <button class="operations operations-light" type="button">C</button>
             </div>
             <div class="items">
-                <button type="button">C</button>
+                <button class="operations operations-light" type="button">Bsc</button>
             </div>
             <div class="items">
-                <button type="button">Bsc</button>
+                <button class="operations operations-light" type="button">+</button>
             </div>
         </div>
         <div class="row">
-            <div class="items">
-                <button type="button">7</button>
+            <div class="items ">
+                <button class="digits digit-light" type="button">7</button>
+            </div>
+            <div class="items ">
+                <button class="digits digit-light" type="button">8</button>
+            </div>
+            <div class="items ">
+                <button class="digits digit-light" type="button">9</button>
             </div>
             <div class="items">
-                <button type="button">8</button>
-            </div>
-            <div class="items">
-                <button type="button">9</button>
-            </div>
-            <div class="items">
-                <button type="button">+</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="items">
-                <button type="button">4</button>
-            </div>
-            <div class="items">
-                <button type="button">5</button>
-            </div>
-            <div class="items">
-                <button type="button">6</button>
-            </div>
-            <div class="items">
-                <button type="button">-</button>
+                <button class="operations operations-light" type="button">-</button>
             </div>
         </div>
         <div class="row">
-            <div class="items">
-                <button type="button">1</button>
+            <div class="items ">
+                <button class="digits digit-light" type="button">4</button>
+            </div>
+            <div class="items ">
+                <button class="digits digit-light" type="button">5</button>
+            </div>
+            <div class="items ">
+                <button class="digits digit-light" type="button">6</button>
             </div>
             <div class="items">
-                <button type="button">2</button>
-            </div>
-            <div class="items">
-                <button type="button">3</button>
-            </div>
-            <div class="items">
-                <button type="button">*</button>
+                <button class="operations operations-light" type="button">/</button>
             </div>
         </div>
         <div class="row">
-            <div class="items">
-                <button type="button">0</button>
+            <div class="items ">
+                <button class="digits digit-light" type="button">1</button>
+            </div>
+            <div class="items ">
+                <button class="digits digit-light" type="button">2</button>
+            </div>
+            <div class="items ">
+                <button class="digits digit-light" type="button">3</button>
             </div>
             <div class="items">
-                <button type="button">.</button>
+                <button class="operations operations-light" type="button">*</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="items ">
+                <button class="digits digit-light" type="button">0</button>
             </div>
             <div class="items">
-                <button type="button">=</button>
+                <button class="operations operations-light" type="button">.</button>
             </div>
             <div class="items">
-                <button type="button">/</button>
+                <button class="equal-to equal-to-light" type="button">=</button>
             </div>
+            <!-- <div class="items">
+                <button class="operations" type="button">/</button>
+            </div> -->
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="theme.js"></script>
 </body>
 </html>

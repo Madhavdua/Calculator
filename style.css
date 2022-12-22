@@ -2,50 +2,73 @@
     margin: 0;
     padding:0;
 }
-body{
+/* body{
     background-image: url(./calci1.jpg);
     height: 93vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+} */
+.theme{
+    margin:auto 7px;
+}
+.hide{
+    display: none;
 }
 .heading{
+    justify-content: center;
     text-align: center;
     margin-top: 2%;
+    display: flex;
+}
+.heading > button{
+    border-radius: 5px;
+    border: 0px;
 }
 .calculator{
-    margin-top: 5%;
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 320px;
+    height: 380px;
+    margin-top: 30px;
+    padding:25px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    margin-left: auto;
+    margin-right: auto;
+}
+.calculator > .row> .items > button{
+    margin: 3px;
+    width: 60px;
+    height: 60px;
+    font-size: larger;
+    border-radius: 50%;
+}
+.calculator > .row> .items> .equal-to{
+    width: 120px;
+    margin: 5px;
+    height: 55px;
+    border-radius: 15px;
 }
 .calculator > .row{
     display: flex; 
     /* flex-direction: column; */
 }
 .calculator> .top> input{
-    width: 370px;
+    border-radius: 10px;
+    width: 280px;
     margin: 10px;
     padding: 10px 5px;
     border: 2px solid black;
 }
-.calculator > .row> .items > button{
-    margin: 3px;
-    width: 90px;
-    height: 40px;
-    color: white;
-    background-color: black;
 
-}
+
 @media screen and (max-width:370px) {
-    .calculator > .row> .items > button{
-        margin: 3px;
-        width: 50px;
-        height: 40px;
-        color: white;
-    background-color: black;
+    .calculator{
+        width: 276px;
     }
+    
     .calculator> .top> input{
     width: 215px;
     margin: 10px;
@@ -54,15 +77,12 @@ body{
 }
 }
 @media screen and (max-width:470px) and (min-width:370px){
-    .calculator > .row> .items > button{
-        margin: 3px;
-        width: 70px;
-        height: 40px;
-        color: white;
-    background-color: black;
+    
+    .calculator{
+        width: 320px;
     }
     .calculator> .top> input{
-    width: 290px;
+    width: 260px;
     margin: 10px;
     border: 2px solid black;
     padding: 10px 5px;
