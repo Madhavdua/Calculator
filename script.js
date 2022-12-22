@@ -1,5 +1,6 @@
 let string=""
 let buttons=document.querySelectorAll('button');
+
 Array.from(buttons).forEach((button)=>{
     button.addEventListener('click',(e)=>{
         string=document.querySelector('input').value
@@ -22,3 +23,12 @@ Array.from(buttons).forEach((button)=>{
 
     })
 })
+
+function enterFunction(event){
+    let x=event.key;
+    if(x=='Enter'){
+        string=document.querySelector('input').value
+        string=eval(string);
+        document.querySelector('input').value=string;
+    }
+}
